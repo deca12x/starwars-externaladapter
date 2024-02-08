@@ -1,3 +1,15 @@
+# My own twist - star wars adapter, no api key
+To run, in terminal 1 do 
+```bash
+yarn start
+```
+...in terminal 2 do
+```bash
+curl -X POST -H "content-type: application/json" "http://localhost:8080/" --data '{ "id": 1, "data": {"peopleId": "1"} }'
+```
+
+
+
 # Chainlink NodeJS External Adapter Template
 
 This template provides a basic framework for developing Chainlink external adapters in NodeJS. Comments are included to assist with development and testing of the external adapter. Once the API-specific values (like query parameters and API key authentication) have been added to the adapter, it is very easy to add some tests to verify that the data will be correctly formatted when returned to the Chainlink node. There is no need to use any additional frameworks or to run a Chainlink node in order to test the adapter.
