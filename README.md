@@ -1,7 +1,11 @@
 # My own twist - star wars adapter, no api key
-To run:
+To run, in terminal 1 do 
 ```bash
-curl -X POST -H "content-type: application/json" "http://localhost:8080/" --data '{ "id": 1, "data": {{"peopleId": "1"} }'
+yarn start
+```
+...in terminal 2 do
+```bash
+curl -X POST -H "content-type: application/json" "http://localhost:8080/" --data '{ "id": 1, "data": {"peopleId": "1"} }'
 ```
 
 
